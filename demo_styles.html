@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing CSS Styles in 2024</title>
+    <!-- Uncomment this to add specific styles to all h1 in this html page. This is used when trying to style multiple headers, paragraphs e.t.c -->
+         <!-- <style type="text/css"> -->
+        <!-- h1 {
+            color: red;
+            font-family: Trebuchet MS;
+        }
+
+        p {
+            color: brown;
+            font-family: Franklin Gothic Medium;
+            font-size: larger;
+            text-decoration: underline;
+        } -->
+
+        <!-- This style below is used to modify the link. Uncomment to see how it works  -->
+         <style type="text/css"> 
+            
+            a {
+             text-decoration: none;
+            }
+            a:link {color: red}
+            a:visited {color: gold} 
+            a:hover {color: lawngreen; text-decoration: underline;}
+            a:active {color: orange}
+            /* For link style to be effective, you need to add an href link to the body */
+        </style>
+    <!-- The tag below helps you link our html to a seperate css page -->
+    <!-- <link rel="stylesheet" type="text/css" href="demo_styles.css"  -->
+</head>
+<body>
+    <!-- <a href="https://www.google.com"> Click This Link To Sign Up </a> -->
+    <!-- The type of styling below is called "Inline Styling" and it is used to style specific stuffs like your header e.t.c -->
+    <!-- <h1 style="color: blueviolet; font-family: Trebuchet MS"> You're Welcome to CSS Course 101 </h1>-->
+    <h1 style="text-decoration: underline;">We Are All Learning</h1> 
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eligendi dolorem quos doloribus ipsam assumenda.</h2>
+    <h2>No one is perfect</h2>
+    <p> consequuntur blanditiis quo ratione earum ab quidem aliquam ipsa facere sit, iste eaque perspiciatis enim.</p>
+
+    <!-- You can still add font-variant to change the appearaance of your fonts as seen below -->
+    <p style="font-variant: small-caps">consequuntur blanditiis quo ratione earum ab quidem aliquam ipsa facere sit, iste eaque perspiciatis enim</p>
+    <!-- Compare the previous line with this next line -->
+    <p style="font-variant: small-caps">Consequuntur Blanditiis Quo Ratione Earum ab Quidem aliquam ipsa facere sit, iste eaque perspiciatis enim</p>
+
+
+    <p style="font: italic small-caps bold 20px cambria; direction: rtl;">A shorter way to use inline styles</style></p>
+    <p style="letter-spacing: 10px; color: chocolate; direction: ltr;"> This is a paragraph with a 10px letter-spacing and a left-to-right-direction.</p>
+
+    <!-- The text-indent gives a space (paragraph) before a sentence -->
+    <p style="word-spacing: 10px; text-indent: 1cm"> This is a paragraph with word spacing of 10px and text indent of 1cm</p>
+
+    <!-- Let's check out the different decorations below: -->
+    <p style="text-decoration: dashed;"> This text will be dashed</p>
+    <p style="text-decoration: line-through;"> This text will have a line through</p>
+    <p style="text-decoration: underline;"> This text will have underline</p>
+    <p style="text-decoration: overline;"> This text will be overlined</p>
+    <p style="text-decoration: blink;"> This text will have blink </p>
+    <p style="text-decoration: dashed;"> This text will be dashed</p>
+    <p style="text-decoration: dotted;"> This text will be dotted</p>
+    <p style="text-decoration: double;"> This text will be double</p>
+
+    <!-- Check out "text-transform". It is used to specify the capitalization of a text in an element -->
+    <p style="text-transform: capitalize;"> this will capitalise all the first words</p>
+    <p style="text-transform: lowercase;"> THIS text will be in lowercase</p>
+    <p style="text-transform: uppercase;"> this TEXT WiLl appear in uppercase</p>
+    
+    <!-- TEXT-SHADOW: This will add shadow effect to texts. it accepts 4 values; 
+        the first value applies shadow to the left side of the text(horizontal offset).
+        the second value(vertical offset applies to the top of text)
+        the 3rd(applies blur to the shadow)
+        the 4th (applies color, if noneis specified, the default, black is used) 
+     -->
+    <p style="text-shadow: 3px yellowgreen; text-transform: capitalize;"> This is a text with a shadow</p>
+    <p style="text-shadow: 3px 5px orange; text-transform: capitalize;"> This is a text with a shadow</p> 
+    <p style="text-shadow: 3px  4px 3px red; text-transform: capitalize;"> This is a text with a shadow</p>
+    <p style="text-shadow: 3px 3px 2px 2px blue; text-transform: capitalize;"> This is a text with a shadow</p>
+
+</body>
+ 
+</html>
